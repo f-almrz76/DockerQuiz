@@ -1,0 +1,6 @@
+FROM ubuntu
+LABEL maintainer="hosseinkalantari.29@gmail.com"
+WORKDIR /app
+COPY . .
+CMD ["python", "name.py"]
+EXPOSE 8000
