@@ -3,9 +3,10 @@ from flask import Flask
 app = Flask(__name__)
 
 
-name = input("What's your name?")
 @app.route("/")
 def say_hello(name):
+    
+    name = request.args.get("name")
     print(f"Hello {name}...")
 
 
