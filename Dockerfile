@@ -1,4 +1,4 @@
 FROM python
-WORKDIR ./quiz.py
+WORKDIR .
 COPY . .
 CMD [ "python", "quiz.py" ]
