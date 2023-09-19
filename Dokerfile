@@ -1,0 +1,7 @@
+FROM python:3
+
+ADD q1.py /
+
+RUN pip install pystrich
+
+CMD [ "python", "./q1.py" ]
